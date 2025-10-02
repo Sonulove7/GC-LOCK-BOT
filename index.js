@@ -20,7 +20,7 @@ const queueRunning = {};
 
 const app = express();
 app.get("/", (_, res) => res.send("<h2>Messenger Bot Running</h2>"));
-app.listen(5000, () => console.log("🌐 Log server: http://localhost:5000"));
+app.listen(3000, () => console.log("🌐 Log server: http://localhost:3000"));
 
 process.on("uncaughtException", (err) => console.error("❗ Uncaught Exception:", err.message));
 process.on("unhandledRejection", (reason) => console.error("❗ Unhandled Rejection:", reason));
